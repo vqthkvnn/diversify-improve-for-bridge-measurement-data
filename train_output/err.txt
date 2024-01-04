@@ -1,0 +1,2327 @@
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\numpy\lib\npyio.py", line 417, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: 'dataemg/emg_x.npy'
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 662, in _apply
+    param_applied = fn(param)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 747, in <lambda>
+    return self._apply(lambda t: t.cuda(device))
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\cuda\__init__.py", line 221, in _lazy_init
+    raise AssertionError("Torch not compiled with CUDA enabled")
+AssertionError: Torch not compiled with CUDA enabled
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\popen_spawn_win32.py", line 89, in __init__
+    reduction.dump(process_obj, to_child)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\reduction.py", line 60, in dump
+    ForkingPickler(file, protocol).dump(obj)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 56, in main
+    algorithm.set_dlabel(train_loader)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 68, in set_dlabel
+    iter_test = iter(loader)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 444, in __iter__
+    return self._get_iterator()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 390, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 1077, in __init__
+    w.start()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\process.py", line 112, in start
+    self._popen = self._Popen(self)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\context.py", line 223, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\context.py", line 322, in _Popen
+    return Popen(process_obj)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\popen_spawn_win32.py", line 89, in __init__
+    reduction.dump(process_obj, to_child)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 25, in main
+    best_valid_acc, target_acc = 0, 0
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 57, in get_act_dataloader
+    args, tr, val, targetdata)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 17, in get_dataloader
+    train_loader = DataLoader(dataset=tr, batch_size=args.batch_size,
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 45, in get_act_dataloader
+    args.steps_per_epoch = int(args.steps_per_epoch*(1-rate))
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 38, in get_act_dataloader
+    if i in args.test_envs:
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 37, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 23, in __init__
+    self.transform = None
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 37, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 21, in __init__
+    self.comb_position(x, cy, py, sy)
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 46, in comb_position
+    ttx = np.hstack((ttx, tx[index]))
+  File "<__array_function__ internals>", line 6, in hstack
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\numpy\core\shape_base.py", line 345, in hstack
+    return _nx.concatenate(arrs, 1)
+  File "<__array_function__ internals>", line 6, in concatenate
+ValueError: all the input array dimensions for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 52 and the array at index 1 has size 0
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 37, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 22, in __init__
+    self.x = self.x[:, :, np.newaxis, :]
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 49, in get_act_dataloader
+    np.random.seed(args.seed)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 56, in get_act_dataloader
+    train_loader, train_loader_noshuffle, valid_loader, target_loader = get_dataloader(
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 37, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 18, in __init__
+    x, cy, py, sy = loaddata_from_numpy(self.dataset, self.task, root_dir)
+  File "E:\robustlearn\diversify\datautil\actdata\util.py", line 25, in loaddata_from_numpy
+    cy, py, sy = ty[:, 0], ty[:, 1], ty[:, 2]
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 37, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 18, in __init__
+    x, cy, py, sy = loaddata_from_numpy(self.dataset, self.task, root_dir)
+  File "E:\robustlearn\diversify\datautil\actdata\util.py", line 25, in loaddata_from_numpy
+    cy, py, sy = ty[:, 0], ty[:, 1], ty[:, 2]
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 37, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 21, in __init__
+    self.comb_position(x, cy, py, sy)
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 46, in comb_position
+    ttx = np.hstack((ttx, tx[index]))
+  File "<__array_function__ internals>", line 6, in hstack
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\numpy\core\shape_base.py", line 345, in hstack
+    return _nx.concatenate(arrs, 1)
+  File "<__array_function__ internals>", line 6, in concatenate
+ValueError: all the input array dimensions for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 52 and the array at index 1 has size 0
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 46, in get_act_dataloader
+    tdata = combindataset(args, source_datasetlist)
+  File "E:\robustlearn\diversify\datautil\util.py", line 107, in __init__
+    self.loader = datalist[0].loader
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 38, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 21, in __init__
+    self.comb_position(x, cy, py, sy)
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 46, in comb_position
+    ttx = np.hstack((ttx, tx[index]))
+  File "<__array_function__ internals>", line 6, in hstack
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\numpy\core\shape_base.py", line 345, in hstack
+    return _nx.concatenate(arrs, 1)
+  File "<__array_function__ internals>", line 6, in concatenate
+ValueError: all the input array dimensions for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 52 and the array at index 1 has size 0
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 38, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 21, in __init__
+    self.comb_position(x, cy, py, sy)
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 46, in comb_position
+    ttx = np.hstack((ttx, tx[index]))
+  File "<__array_function__ internals>", line 6, in hstack
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\numpy\core\shape_base.py", line 345, in hstack
+    return _nx.concatenate(arrs, 1)
+  File "<__array_function__ internals>", line 6, in concatenate
+ValueError: all the input array dimensions for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 52 and the array at index 1 has size 0
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 38, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 13, in __init__
+    self.domain_num = 0
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 38, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 21, in __init__
+    self.comb_position(x, cy, py, sy)
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 46, in comb_position
+    ttx = np.hstack((ttx, tx[index]))
+  File "<__array_function__ internals>", line 6, in hstack
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\numpy\core\shape_base.py", line 345, in hstack
+    return _nx.concatenate(arrs, 1)
+  File "<__array_function__ internals>", line 6, in concatenate
+ValueError: all the input array dimensions for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 52 and the array at index 1 has size 0
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 38, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 21, in __init__
+    self.comb_position(x, cy, py, sy)
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 40, in comb_position
+    tx, tcy, tsy = x[index], cy[index], sy[index]
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 38, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 21, in __init__
+    self.comb_position(x, cy, py, sy)
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 41, in comb_position
+    tx, tcy, tsy = x[index], cy[index], sy[index]
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 38, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 21, in __init__
+    self.comb_position(x, cy, py, sy)
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 40, in comb_position
+    indexs = indexs[0]
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 38, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 21, in __init__
+    self.comb_position(x, cy, py, sy)
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 40, in comb_position
+    tx, tcy, tsy = x[index], cy[index], sy[index]
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 38, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 21, in __init__
+    self.comb_position(x, cy, py, sy)
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 46, in comb_position
+    ttx = np.hstack((ttx, tx[index]))
+  File "<__array_function__ internals>", line 6, in hstack
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\numpy\core\shape_base.py", line 345, in hstack
+    return _nx.concatenate(arrs, 1)
+  File "<__array_function__ internals>", line 6, in concatenate
+ValueError: all the input array dimensions for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 52 and the array at index 1 has size 0
+Error evaluating: thread_id: pid_28400_id_2396288337928
+frame_id: 2394656406088
+scope: FRAME
+attrs: index
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydevd_bundle\pydevd_vars.py", line 280, in resolve_compound_variable_fields
+    def resolve_compound_variable_fields(thread_id, frame_id, scope, attrs, user_type_renderers={}):
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydevd_bundle\pydevd_vars.py", line 264, in _resolve_default_variable_fields
+    def _resolve_default_variable_fields(var, resolver, offset):
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\pydevd_plugins\extensions\types\pydevd_plugin_numpy_types.py", line 84, in get_dictionary
+    def get_dictionary(self, obj):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\numpy\core\_methods.py", line 42, in _amin
+    def _amin(a, axis=None, out=None, keepdims=False,
+ValueError: zero-size array to reduction operation minimum which has no identity
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 38, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 21, in __init__
+    self.comb_position(x, cy, py, sy)
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 43, in comb_position
+    if j == 0:
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 38, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 21, in __init__
+    self.comb_position(x, cy, py, sy)
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 47, in comb_position
+    if i == 0:
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 38, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 21, in __init__
+    self.comb_position(x, cy, py, sy)
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 43, in comb_position
+    if j == 0:
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 38, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 21, in __init__
+    self.comb_position(x, cy, py, sy)
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 48, in comb_position
+    ttx = np.hstack((ttx, tx[index]))
+UnboundLocalError: local variable 'ttx' referenced before assignment
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 38, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 21, in __init__
+    self.comb_position(x, cy, py, sy)
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 48, in comb_position
+    ttx = np.hstack((ttx, tx[index]))
+UnboundLocalError: local variable 'ttx' referenced before assignment
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 42, in main
+    loss_result_dict = algorithm.update_a(data, opta)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 137, in update_a
+    all_z = self.abottleneck(self.featurizer(all_x))
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\robustlearn\diversify\network\act_network.py", line 37, in forward
+    x = self.conv2(self.conv1(x))
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\container.py", line 139, in forward
+    input = module(input)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\conv.py", line 457, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\conv.py", line 454, in _conv_forward
+    self.padding, self.dilation, self.groups)
+RuntimeError: Given groups=1, weight of size [16, 8, 1, 9], expected input[96, 5, 1, 8000] to have 8 channels, but got 5 channels instead
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 42, in main
+    loss_result_dict = algorithm.update_a(data, opta)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 137, in update_a
+    all_z = self.abottleneck(self.featurizer(all_x))
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\robustlearn\diversify\network\act_network.py", line 37, in forward
+    x = self.conv2(self.conv1(x))
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\container.py", line 139, in forward
+    input = module(input)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\conv.py", line 457, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\conv.py", line 454, in _conv_forward
+    self.padding, self.dilation, self.groups)
+RuntimeError: Given groups=1, weight of size [16, 8, 1, 9], expected input[96, 5, 1, 8000] to have 8 channels, but got 5 channels instead
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 42, in main
+    loss_result_dict = algorithm.update_a(data, opta)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 137, in update_a
+    all_z = self.abottleneck(self.featurizer(all_x))
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\robustlearn\diversify\network\act_network.py", line 37, in forward
+    x = self.conv2(self.conv1(x))
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\container.py", line 139, in forward
+    input = module(input)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\conv.py", line 457, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\conv.py", line 454, in _conv_forward
+    self.padding, self.dilation, self.groups)
+RuntimeError: Given groups=1, weight of size [16, 8, 1, 9], expected input[96, 5, 1, 8000] to have 8 channels, but got 5 channels instead
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 42, in main
+    loss_result_dict = algorithm.update_a(data, opta)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 137, in update_a
+    all_z = self.abottleneck(self.featurizer(all_x))
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\robustlearn\diversify\network\act_network.py", line 37, in forward
+    x = self.conv2(self.conv1(x))
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\container.py", line 139, in forward
+    input = module(input)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\conv.py", line 457, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\conv.py", line 454, in _conv_forward
+    self.padding, self.dilation, self.groups)
+RuntimeError: Given groups=1, weight of size [16, 8, 1, 9], expected input[96, 5, 1, 8000] to have 8 channels, but got 5 channels instead
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 42, in main
+    loss_result_dict = algorithm.update_a(data, opta)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 137, in update_a
+    all_z = self.abottleneck(self.featurizer(all_x))
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\robustlearn\diversify\network\act_network.py", line 38, in forward
+    x = x.view(-1, self.in_features)
+RuntimeError: shape '[-1, 1408]' is invalid for input of size 6125568
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 42, in main
+    loss_result_dict = algorithm.update_a(data, opta)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 137, in update_a
+    all_z = self.abottleneck(self.featurizer(all_x))
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\robustlearn\diversify\network\act_network.py", line 38, in forward
+    x = x.view(-1, self.in_features)
+RuntimeError: shape '[-1, 1408]' is invalid for input of size 6125568
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 42, in main
+    loss_result_dict = algorithm.update_a(data, opta)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 139, in update_a
+    classifier_loss = F.cross_entropy(all_preds, all_y)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\functional.py", line 3014, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(input, target, weight, _Reduction.get_enum(reduction), ignore_index, label_smoothing)
+ValueError: Expected input batch_size (3072) to match target batch_size (96).
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 28, in main
+    algorithm = algorithm_class(args).cuda()
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 22, in __init__
+    self.featurizer = get_fea(args)
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 9, in get_fea
+    net = act_network.ActNetwork(args.dataset)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 41, in main
+    for data in train_loader:
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 444, in __iter__
+    return self._get_iterator()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 390, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 1077, in __init__
+    w.start()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\process.py", line 112, in start
+    self._popen = self._Popen(self)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\context.py", line 223, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\context.py", line 322, in _Popen
+    return Popen(process_obj)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\popen_spawn_win32.py", line 89, in __init__
+    reduction.dump(process_obj, to_child)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\reduction.py", line 60, in dump
+    ForkingPickler(file, protocol).dump(obj)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 42, in main
+    loss_result_dict = algorithm.update_a(data, opta)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 137, in update_a
+    dt_z = self.featurizer(all_x)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\robustlearn\diversify\network\act_network.py", line 40, in forward
+    x = x.view(-1, self.in_features)
+RuntimeError: shape '[-1, 1408]' is invalid for input of size 6125568
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 42, in main
+    loss_result_dict = algorithm.update_a(data, opta)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 138, in update_a
+    all_z = self.abottleneck(dt_z)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\robustlearn\diversify\network\common_network.py", line 19, in forward
+    x = self.bottleneck(x)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (96x63808 and 1408x256)
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 42, in main
+    loss_result_dict = algorithm.update_a(data, opta)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 137, in update_a
+    dt_z = self.featurizer(all_x)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\robustlearn\diversify\network\act_network.py", line 39, in forward
+    x = self.conv2(self.conv1(x))
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\container.py", line 139, in forward
+    input = module(input)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\batchnorm.py", line 179, in forward
+    self.eps,
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\functional.py", line 2439, in batch_norm
+    input, weight, bias, running_mean, running_var, training, momentum, eps, torch.backends.cudnn.enabled
+RuntimeError: running_mean should contain 16 elements not 32
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 42, in main
+    loss_result_dict = algorithm.update_a(data, opta)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 137, in update_a
+    dt_z = self.featurizer(all_x)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\robustlearn\diversify\network\act_network.py", line 39, in forward
+    x = self.conv2(self.conv1(x))
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\container.py", line 139, in forward
+    input = module(input)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\pooling.py", line 164, in forward
+    return_indices=self.return_indices)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\_jit_internal.py", line 423, in fn
+    return if_false(*args, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\functional.py", line 782, in _max_pool2d
+    return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+RuntimeError: Given input size: (16x1x7992). Calculated output size: (16x0x3995). Output size is too small
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 42, in main
+    loss_result_dict = algorithm.update_a(data, opta)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 137, in update_a
+    dt_z = self.featurizer(all_x)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\robustlearn\diversify\network\act_network.py", line 40, in forward
+    x = x.view(-1, int(x.shape[3]) * int(x.shape[1]))
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\popen_spawn_win32.py", line 89, in __init__
+    reduction.dump(process_obj, to_child)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\reduction.py", line 60, in dump
+    ForkingPickler(file, protocol).dump(obj)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 51, in main
+    for data in train_loader:
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 444, in __iter__
+    return self._get_iterator()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 390, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 1077, in __init__
+    w.start()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\process.py", line 112, in start
+    self._popen = self._Popen(self)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\context.py", line 223, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\context.py", line 322, in _Popen
+    return Popen(process_obj)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\popen_spawn_win32.py", line 89, in __init__
+    reduction.dump(process_obj, to_child)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 25, in main
+    best_valid_acc, target_acc = 0, 0
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 25, in main
+    best_valid_acc, target_acc = 0, 0
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\train.py", line 98, in <module>
+    args = get_args()
+  File "E:\robustlearn\diversify\utils\util.py", line 151, in get_args
+    args = act_param_init(args)
+  File "E:\robustlearn\diversify\utils\util.py", line 97, in act_param_init
+    args.dataset][1], tmp[args.dataset][0], tmp[args.dataset][2]
+KeyError: 'dsads'
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 25, in main
+    best_valid_acc, target_acc = 0, 0
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 25, in main
+    best_valid_acc, target_acc = 0, 0
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 39, in get_act_dataloader
+    if i in args.test_envs:
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 47, in get_act_dataloader
+    tdata = combindataset(args, source_datasetlist)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 59, in get_act_dataloader
+    return train_loader, train_loader_noshuffle, valid_loader, target_loader, tr, val, targetdata
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 56, in get_act_dataloader
+    train_loader, train_loader_noshuffle, valid_loader, target_loader = get_dataloader(
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 46, in get_act_dataloader
+    tdata = combindataset(args, source_datasetlist)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 37, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 18, in __init__
+    x, cy, py, sy = loaddata_from_numpy(self.dataset, self.task, root_dir)
+  File "E:\robustlearn\diversify\datautil\actdata\util.py", line 23, in loaddata_from_numpy
+    return x, cy, py, sy
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 56, in get_act_dataloader
+    train_loader, train_loader_noshuffle, valid_loader, target_loader = get_dataloader(
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 37, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 19, in __init__
+    self.people_group = people_group
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 40, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 19, in __init__
+    self.people_group = people_group
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 42, in main
+    loss_result_dict = algorithm.update_a(data, opta)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 137, in update_a
+    dt_z = self.featurizer(all_x)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\robustlearn\diversify\network\act_network.py", line 37, in forward
+    x = self.conv2(self.conv1(x))
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\container.py", line 139, in forward
+    input = module(input)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\conv.py", line 457, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\conv.py", line 454, in _conv_forward
+    self.padding, self.dilation, self.groups)
+RuntimeError: Given groups=1, weight of size [16, 8, 1, 9], expected input[96, 5, 1, 8000] to have 8 channels, but got 5 channels instead
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 42, in main
+    loss_result_dict = algorithm.update_a(data, opta)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 138, in update_a
+    all_z = self.abottleneck(dt_z)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\robustlearn\diversify\network\common_network.py", line 19, in forward
+    x = self.bottleneck(x)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (96x63808 and 1994x256)
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 42, in main
+    loss_result_dict = algorithm.update_a(data, opta)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 137, in update_a
+    dt_z = self.featurizer(all_x)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\robustlearn\diversify\network\act_network.py", line 39, in forward
+    x = self.conv2(self.conv1(x))
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\container.py", line 139, in forward
+    input = module(input)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\batchnorm.py", line 179, in forward
+    self.eps,
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\functional.py", line 2439, in batch_norm
+    input, weight, bias, running_mean, running_var, training, momentum, eps, torch.backends.cudnn.enabled
+RuntimeError: running_mean should contain 32 elements not 16
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 42, in main
+    loss_result_dict = algorithm.update_a(data, opta)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 138, in update_a
+    all_z = self.abottleneck(dt_z)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\robustlearn\diversify\network\common_network.py", line 19, in forward
+    x = self.bottleneck(x)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (96x63808 and 3968x256)
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 42, in main
+    loss_result_dict = algorithm.update_a(data, opta)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 138, in update_a
+    all_z = self.abottleneck(dt_z)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\robustlearn\diversify\network\common_network.py", line 19, in forward
+    x = self.bottleneck(x)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (96x63808 and 3968x256)
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 42, in main
+    loss_result_dict = algorithm.update_a(data, opta)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 138, in update_a
+    all_z = self.abottleneck(dt_z)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\robustlearn\diversify\network\common_network.py", line 19, in forward
+    x = self.bottleneck(x)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (96x7936 and 3968x256)
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 83, in main
+    acc = modelopera.accuracy(algorithm, target_loader, None)
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 20, in accuracy
+    for data in loader:
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 444, in __iter__
+    return self._get_iterator()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 390, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 1077, in __init__
+    w.start()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\process.py", line 112, in start
+    self._popen = self._Popen(self)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\context.py", line 223, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\context.py", line 322, in _Popen
+    return Popen(process_obj)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\popen_spawn_win32.py", line 89, in __init__
+    reduction.dump(process_obj, to_child)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\reduction.py", line 60, in dump
+    ForkingPickler(file, protocol).dump(obj)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\popen_spawn_win32.py", line 89, in __init__
+    reduction.dump(process_obj, to_child)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\reduction.py", line 60, in dump
+    ForkingPickler(file, protocol).dump(obj)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 70, in main
+    for data in train_loader:
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 444, in __iter__
+    return self._get_iterator()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 390, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 1077, in __init__
+    w.start()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\process.py", line 112, in start
+    self._popen = self._Popen(self)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\context.py", line 223, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\context.py", line 322, in _Popen
+    return Popen(process_obj)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\popen_spawn_win32.py", line 89, in __init__
+    reduction.dump(process_obj, to_child)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 52, in main
+    loss_result_dict = algorithm.update_d(data, optd)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 50, in update_d
+    disc_out1 = self.ddiscriminator(disc_in1)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\robustlearn\diversify\network\Adver_network.py", line 39, in forward
+    return self.layers(x)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\container.py", line 139, in forward
+    input = module(input)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+TypeError: linear(): argument 'input' (position 1) must be Tensor, not tuple
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 52, in main
+    loss_result_dict = algorithm.update_d(data, optd)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 50, in update_d
+    disc_out1 = self.ddiscriminator(disc_in1)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\robustlearn\diversify\network\Adver_network.py", line 39, in forward
+    return self.layers(x)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\container.py", line 139, in forward
+    input = module(input)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+TypeError: linear(): argument 'input' (position 1) must be Tensor, not tuple
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 52, in main
+    loss_result_dict = algorithm.update_d(data, optd)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 50, in update_d
+    disc_out1 = self.ddiscriminator(disc_in1)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\robustlearn\diversify\network\Adver_network.py", line 39, in forward
+    return self.layers(x)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\container.py", line 139, in forward
+    input = module(input)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+TypeError: linear(): argument 'input' (position 1) must be Tensor, not tuple
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 42, in main
+    loss_result_dict = algorithm.update_a(data, opta)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 137, in update_a
+    dt_z = self.featurizer(all_x)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\robustlearn\diversify\network\act_network.py", line 42, in forward
+    x = self.lstm(x)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\rnn.py", line 767, in forward
+    self.check_forward_args(input, hx, batch_sizes)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\rnn.py", line 692, in check_forward_args
+    self.check_input(input, batch_sizes)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\rnn.py", line 207, in check_input
+    self.input_size, input.size(-1)))
+RuntimeError: input.size(-1) must be equal to input_size. Expected 4096, got 3968
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 25, in main
+    best_valid_acc, target_acc = 0, 0
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 42, in main
+    loss_result_dict = algorithm.update_a(data, opta)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 137, in update_a
+    dt_z = self.featurizer(all_x)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\robustlearn\diversify\network\act_network.py", line 44, in forward
+    x = self.lstm(self.conv2(self.conv1(x)))
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\container.py", line 139, in forward
+    input = module(input)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\rnn.py", line 767, in forward
+    self.check_forward_args(input, hx, batch_sizes)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\rnn.py", line 692, in check_forward_args
+    self.check_input(input, batch_sizes)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\rnn.py", line 203, in check_input
+    expected_input_dim, input.dim()))
+RuntimeError: input must have 3 dimensions, got 5
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 25, in main
+    best_valid_acc, target_acc = 0, 0
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 42, in main
+    loss_result_dict = algorithm.update_a(data, opta)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 137, in update_a
+    dt_z = self.featurizer(all_x)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\robustlearn\diversify\network\act_network.py", line 46, in forward
+    x = self.lstm(x)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\container.py", line 139, in forward
+    input = module(input)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\activation.py", line 98, in forward
+    return F.relu(input, inplace=self.inplace)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\functional.py", line 1457, in relu
+    result = torch.relu(input)
+TypeError: relu(): argument 'input' (position 1) must be Tensor, not tuple
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 42, in main
+    loss_result_dict = algorithm.update_a(data, opta)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 138, in update_a
+    all_z = self.abottleneck(dt_z)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\robustlearn\diversify\network\common_network.py", line 19, in forward
+    x = self.bottleneck(x)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (96x3968 and 1984x256)
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 42, in main
+    loss_result_dict = algorithm.update_a(data, opta)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 138, in update_a
+    all_z = self.abottleneck(dt_z)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\robustlearn\diversify\network\common_network.py", line 19, in forward
+    x = self.bottleneck(x)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (96x3968 and 1984x256)
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 42, in main
+    loss_result_dict = algorithm.update_a(data, opta)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 138, in update_a
+    all_z = self.abottleneck(dt_z)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\robustlearn\diversify\network\common_network.py", line 19, in forward
+    x = self.bottleneck(x)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (96x3968 and 1984x256)
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 41, in main
+    for data in train_loader:
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 444, in __iter__
+    return self._get_iterator()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 390, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 1077, in __init__
+    w.start()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\process.py", line 112, in start
+    self._popen = self._Popen(self)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\context.py", line 223, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\context.py", line 322, in _Popen
+    return Popen(process_obj)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\popen_spawn_win32.py", line 89, in __init__
+    reduction.dump(process_obj, to_child)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 43, in get_act_dataloader
+    args, "target", args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 21, in __init__
+    self.comb_position(x, cy, py, sy)
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 40, in comb_position
+    tx, tcy, tsy = x[index], cy[index], sy[index]
+IndexError: index 1800 is out of bounds for axis 0 with size 231
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 23, in main
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 40, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 18, in __init__
+    x, cy, py, sy = loaddata_from_numpy(self.dataset, self.task, root_dir)
+  File "E:\robustlearn\diversify\datautil\actdata\util.py", line 38, in loaddata_from_numpy
+    x = np.reshape(x, (x.shape[0], x.shape[2], x.shape[1]))
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\popen_spawn_win32.py", line 89, in __init__
+    reduction.dump(process_obj, to_child)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\reduction.py", line 60, in dump
+    ForkingPickler(file, protocol).dump(obj)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 99, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 56, in main
+    algorithm.set_dlabel(train_loader)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 68, in set_dlabel
+    iter_test = iter(loader)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 444, in __iter__
+    return self._get_iterator()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 390, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 1077, in __init__
+    w.start()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\process.py", line 112, in start
+    self._popen = self._Popen(self)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\context.py", line 223, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\context.py", line 322, in _Popen
+    return Popen(process_obj)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\popen_spawn_win32.py", line 89, in __init__
+    reduction.dump(process_obj, to_child)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\train.py", line 103, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 45, in main
+    loss_result_dict = algorithm.update_a(data, opta)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 137, in update_a
+    dt_z = self.featurizer(all_x)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\robustlearn\diversify\network\act_network.py", line 40, in forward
+    plt.plot(x.to('cpu').numpy())
+RuntimeError: Can't call numpy() on Tensor that requires grad. Use tensor.detach().numpy() instead.
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\train.py", line 103, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 45, in main
+    loss_result_dict = algorithm.update_a(data, opta)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 137, in update_a
+    dt_z = self.featurizer(all_x)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\robustlearn\diversify\network\act_network.py", line 41, in forward
+    plt.plot(x.to('cpu').numpy())
+RuntimeError: Can't call numpy() on Tensor that requires grad. Use tensor.detach().numpy() instead.
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\train.py", line 103, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 45, in main
+    loss_result_dict = algorithm.update_a(data, opta)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 137, in update_a
+    dt_z = self.featurizer(all_x)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\robustlearn\diversify\network\act_network.py", line 41, in forward
+    plt.plot(x.detach().numpy())
+TypeError: can't convert cuda:0 device type tensor to numpy. Use Tensor.cpu() to copy the tensor to host memory first.
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 8, in <module>
+    output = model(train_loader)
+TypeError: 'collections.OrderedDict' object is not callable
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 8, in <module>
+    for data in train_loader:
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 444, in __iter__
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\spawn.py", line 114, in _main
+    prepare(preparation_data)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\spawn.py", line 225, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\spawn.py", line 277, in _fixup_main_from_path
+    run_name="__mp_main__")
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\runpy.py", line 263, in run_path
+    pkg_name=pkg_name, script_name=fname)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\runpy.py", line 96, in _run_module_code
+    mod_name, mod_spec, pkg_name, script_name)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "E:\robustlearn\diversify\test.py", line 8, in <module>
+    for data in train_loader:
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 444, in __iter__
+    return self._get_iterator()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 390, in _get_iterator
+    return self._get_iterator()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 390, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 1077, in __init__
+    return _MultiProcessingDataLoaderIter(self)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 1077, in __init__
+    w.start()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\process.py", line 112, in start
+    w.start()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\process.py", line 112, in start
+    self._popen = self._Popen(self)self._popen = self._Popen(self)  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\context.py", line 223, in _Popen
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\context.py", line 223, in _Popen
+        return _default_context.get_context().Process._Popen(process_obj)return _default_context.get_context().Process._Popen(process_obj)
+
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\context.py", line 322, in _Popen
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\context.py", line 322, in _Popen
+        rn Popen(process_obj)return Popen(process_obj)  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\popen_spawn_win32.py", line 46, in __init__
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\popen_spawn_win32.py", line 89, in __init__
+    prep_data = spawn.get_preparation_data(process_obj._name)reduction.dump(process_obj, to_child)
+
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\spawn.py", line 143, in get_preparation_data
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\reduction.py", line 60, in dump
+    _check_not_importing_main()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\spawn.py", line 136, in _check_not_importing_main
+    is not going to be frozen to produce an executable.''')
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+    ForkingPickler(file, protocol).dump(obj)
+BrokenPipeError: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 7, in <module>
+    model.load_state_dict(torch.load("model"))
+TypeError: load_state_dict() missing 1 required positional argument: 'state_dict'
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 103, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 31, in main
+    algorithm = algorithm_class(args).cuda()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\test.py", line 7, in <module>
+    model.load_state_dict(torch.load("model"), strict=False)
+TypeError: load_state_dict() missing 1 required positional argument: 'state_dict'
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\popen_spawn_win32.py", line 89, in __init__
+    reduction.dump(process_obj, to_child)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\reduction.py", line 60, in dump
+    ForkingPickler(file, protocol).dump(obj)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 103, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 44, in main
+    for data in train_loader:
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 444, in __iter__
+    return self._get_iterator()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 390, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 1077, in __init__
+    w.start()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\process.py", line 112, in start
+    self._popen = self._Popen(self)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\context.py", line 223, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\context.py", line 322, in _Popen
+    return Popen(process_obj)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\popen_spawn_win32.py", line 89, in __init__
+    reduction.dump(process_obj, to_child)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\popen_spawn_win32.py", line 89, in __init__
+    reduction.dump(process_obj, to_child)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\reduction.py", line 60, in dump
+    ForkingPickler(file, protocol).dump(obj)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\train.py", line 103, in <module>
+    main(args)
+  File "E:\robustlearn\diversify\train.py", line 73, in main
+    for data in train_loader:
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 444, in __iter__
+    return self._get_iterator()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 390, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 1077, in __init__
+    w.start()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\process.py", line 112, in start
+    self._popen = self._Popen(self)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\context.py", line 223, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\context.py", line 322, in _Popen
+    return Popen(process_obj)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\popen_spawn_win32.py", line 89, in __init__
+    reduction.dump(process_obj, to_child)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "E:\robustlearn\diversify\test.py", line 13, in <module>
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    for data in train_loader:
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 444, in __iter__
+    exitcode = _main(fd)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\spawn.py", line 114, in _main
+    prepare(preparation_data)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\spawn.py", line 225, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\spawn.py", line 277, in _fixup_main_from_path
+    return self._get_iterator()
+      File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 390, in _get_iterator
+run_name="__mp_main__")
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\runpy.py", line 263, in run_path
+    return _MultiProcessingDataLoaderIter(self)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 1077, in __init__
+    pkg_name=pkg_name, script_name=fname)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\runpy.py", line 96, in _run_module_code
+        mod_name, mod_spec, pkg_name, script_name)w.start()
+
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\runpy.py", line 85, in _run_code
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\process.py", line 112, in start
+    exec(code, run_globals)
+  File "E:\robustlearn\diversify\test.py", line 13, in <module>
+    for data in train_loader:
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 444, in __iter__
+    self._popen = self._Popen(self)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\context.py", line 223, in _Popen
+    return self._get_iterator()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 390, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 1077, in __init__
+    return _default_context.get_context().Process._Popen(process_obj)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\context.py", line 322, in _Popen
+    return Popen(process_obj)    w.start()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\popen_spawn_win32.py", line 89, in __init__
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\process.py", line 112, in start
+    self._popen = self._Popen(self)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\context.py", line 223, in _Popen
+    reduction.dump(process_obj, to_child)
+      File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\reduction.py", line 60, in dump
+
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\context.py", line 322, in _Popen
+    return Popen(process_obj)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\popen_spawn_win32.py", line 46, in __init__
+    prep_data = spawn.get_preparation_data(process_obj._name)
+      File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\spawn.py", line 143, in get_preparation_data
+ForkingPickler(file, protocol).dump(obj)
+BrokenPipeError: [Errno 32] Broken pipe
+    _check_not_importing_main()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\spawn.py", line 136, in _check_not_importing_main
+    is not going to be frozen to produce an executable.''')
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 13, in <module>
+    for data in train_loader:
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 444, in __iter__
+    return self._get_iterator()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 390, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 1077, in __init__
+    w.start()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\process.py", line 112, in start
+    self._popen = self._Popen(self)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\context.py", line 223, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\context.py", line 322, in _Popen
+    return Popen(process_obj)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\popen_spawn_win32.py", line 89, in __init__
+    reduction.dump(process_obj, to_child)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\reduction.py", line 60, in dump
+    ForkingPickler(file, protocol).dump(obj)
+BrokenPipeError: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\spawn.py", line 114, in _main
+    prepare(preparation_data)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\spawn.py", line 225, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\spawn.py", line 277, in _fixup_main_from_path
+    run_name="__mp_main__")
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\runpy.py", line 263, in run_path
+    pkg_name=pkg_name, script_name=fname)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\runpy.py", line 96, in _run_module_code
+    mod_name, mod_spec, pkg_name, script_name)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "E:\robustlearn\diversify\test.py", line 13, in <module>
+    for data in train_loader:
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 444, in __iter__
+    return self._get_iterator()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 390, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 1077, in __init__
+    w.start()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\process.py", line 112, in start
+    self._popen = self._Popen(self)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\context.py", line 223, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\context.py", line 322, in _Popen
+    return Popen(process_obj)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\popen_spawn_win32.py", line 46, in __init__
+    prep_data = spawn.get_preparation_data(process_obj._name)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\spawn.py", line 143, in get_preparation_data
+    _check_not_importing_main()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\spawn.py", line 136, in _check_not_importing_main
+    is not going to be frozen to produce an executable.''')
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 12, in <module>
+  File "<string>", line 1, in <module>
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    for data in train_loader:
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 444, in __iter__
+    exitcode = _main(fd)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\spawn.py", line 114, in _main
+    prepare(preparation_data)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\spawn.py", line 225, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\spawn.py", line 277, in _fixup_main_from_path
+    run_name="__mp_main__")
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\runpy.py", line 263, in run_path
+    pkg_name=pkg_name, script_name=fname)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\runpy.py", line 96, in _run_module_code
+    mod_name, mod_spec, pkg_name, script_name)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "E:\robustlearn\diversify\test.py", line 12, in <module>
+    for data in train_loader:
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 444, in __iter__
+    return self._get_iterator()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 390, in _get_iterator
+    return self._get_iterator()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 390, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 1077, in __init__
+    return _MultiProcessingDataLoaderIter(self)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\utils\data\dataloader.py", line 1077, in __init__
+    w.start()
+    w.start():\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\process.py", line 112, in start
+
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\process.py", line 112, in start
+    self._popen = self._Popen(self)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\context.py", line 223, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\context.py", line 322, in _Popen
+    return Popen(process_obj)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\popen_spawn_win32.py", line 46, in __init__
+    self._popen = self._Popen(self)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\context.py", line 223, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\context.py", line 322, in _Popen
+    return Popen(process_obj)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\popen_spawn_win32.py", line 89, in __init__
+        reduction.dump(process_obj, to_child)a(process_obj._name)
+
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\spawn.py", line 143, in get_preparation_data
+    _check_not_importing_main()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\multiprocessing\spawn.py", line 136, in _check_not_importing_main
+    is not going to be frozen to produce an executable.''')
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+    ForkingPickler(file, protocol).dump(obj)
+BrokenPipeError: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 12, in <module>
+    for data in train_loader:
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 7, in <module>
+    model = torch.load("model.pth")
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\test.py", line 13, in <module>
+    output = model(data)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 201, in _forward_unimplemented
+    raise NotImplementedError(f"Module [{type(self).__name__}] is missing the required \"forward\" function")
+NotImplementedError: Module [Diversify] is missing the required "forward" function
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 14, in <module>
+    print(output)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 13, in <module>
+    output = modelopera.accuracy(model, target_loader, None)
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 20, in accuracy
+    for data in loader:
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 14, in <module>
+    print(output)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 14, in <module>
+    print(output)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 13, in <module>
+    output = modelopera.accuracy(model, target_loader, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 42, in accuracy
+    total += batch_weights.sum().item()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 13, in <module>
+    output = modelopera.accuracy(model, target_loader, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 24, in accuracy
+    p = network.predict(x)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 148, in predict
+    return self.classifier(self.bottleneck(self.featurizer(x)))
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\robustlearn\diversify\network\common_network.py", line 39, in forward
+    return x
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 13, in <module>
+    output = modelopera.accuracy(model, target_loader, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 40, in accuracy
+    correct += (p.argmax(1).eq(y).float() *
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 13, in <module>
+    output = modelopera.accuracy(model, target_loader, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 22, in accuracy
+    x = data[0].cuda().float()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 43, in accuracy
+    t = p.argmax(1).numpy()
+TypeError: can't convert cuda:0 device type tensor to numpy. Use Tensor.cpu() to copy the tensor to host memory first.
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 44, in accuracy
+    class_predict = np.concatenate(class_predict, t)
+  File "<__array_function__ internals>", line 6, in concatenate
+TypeError: only integer scalar arrays can be converted to a scalar index
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 43, in accuracy
+    t = p.argmax(1).cpu().data().numpy()
+TypeError: 'Tensor' object is not callable
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 44, in accuracy
+    class_predict = np.concatenate(class_predict, t)
+  File "<__array_function__ internals>", line 6, in concatenate
+TypeError: only integer scalar arrays can be converted to a scalar index
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 13, in <module>
+    output = modelopera.accuracy(model, target_loader, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 44, in accuracy
+    class_predict = np.concatenate(class_predict, t)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\test.py", line 13, in <module>
+    output = modelopera.accuracy(model, target_loader, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 49, in accuracy
+    _, labels = loader[:]
+TypeError: 'DataLoader' object is not subscriptable
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\test.py", line 13, in <module>
+    output = modelopera.accuracy(model, target_loader, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 50, in accuracy
+    _, labels = loader.dataset
+ValueError: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 13, in <module>
+    output = modelopera.accuracy(model, target_loader, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 50, in accuracy
+    _, labels = loader.dataset
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 13, in <module>
+    output = modelopera.accuracy(model, target_loader, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 53, in accuracy
+    return correct / total
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 13, in <module>
+    output = modelopera.accuracy(model, train_loader, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 53, in accuracy
+    return correct / total
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 13, in <module>
+    output = modelopera.accuracy(model, train_loader_noshuffle, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 53, in accuracy
+    return correct / total
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 13, in <module>
+    output = modelopera.accuracy(model, valid_loader, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 27, in accuracy
+    p = network.predict(x)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 148, in predict
+    return self.classifier(self.bottleneck(self.featurizer(x)))
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\robustlearn\diversify\network\common_network.py", line 39, in forward
+    return x
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 13, in <module>
+    output = modelopera.accuracy(model, valid_loader, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 27, in accuracy
+    p = network.predict(x)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 148, in predict
+    return self.classifier(self.bottleneck(self.featurizer(x)))
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\robustlearn\diversify\network\common_network.py", line 38, in forward
+    x = self.fc(x)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\test.py", line 11, in <module>
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 40, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 18, in __init__
+    x, cy, py, sy = loaddata_from_numpy(self.dataset, self.task, root_dir)
+  File "E:\robustlearn\diversify\datautil\actdata\util.py", line 45, in loaddata_from_numpy
+    tsne_results = TSNE(n_components=2, learning_rate='auto',init = 'random', perplexity = 3).fit_transform(x_train)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\manifold\_t_sne.py", line 1108, in fit_transform
+    embedding = self._fit(X)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\manifold\_t_sne.py", line 834, in _fit
+    dtype=[np.float32, np.float64],
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\base.py", line 566, in _validate_data
+    X = check_array(X, **check_params)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\utils\validation.py", line 796, in check_array
+    % (array.ndim, estimator_name)
+ValueError: Found array with dim 3. Estimator expected <= 2.
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\test.py", line 11, in <module>
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 40, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 18, in __init__
+    x, cy, py, sy = loaddata_from_numpy(self.dataset, self.task, root_dir)
+  File "E:\robustlearn\diversify\datautil\actdata\util.py", line 45, in loaddata_from_numpy
+    tsne_results = TSNE(n_components=3, learning_rate='auto',init = 'random', perplexity = 3).fit_transform(x_train)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\manifold\_t_sne.py", line 1108, in fit_transform
+    embedding = self._fit(X)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\manifold\_t_sne.py", line 834, in _fit
+    dtype=[np.float32, np.float64],
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\base.py", line 566, in _validate_data
+    X = check_array(X, **check_params)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\utils\validation.py", line 796, in check_array
+    % (array.ndim, estimator_name)
+ValueError: Found array with dim 3. Estimator expected <= 2.
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 11, in <module>
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 40, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 18, in __init__
+    x, cy, py, sy = loaddata_from_numpy(self.dataset, self.task, root_dir)
+  File "E:\robustlearn\diversify\datautil\actdata\util.py", line 45, in loaddata_from_numpy
+    tsne_results = TSNE(n_components=16, learning_rate='auto',init = 'random', perplexity = 3).fit_transform(x_train)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\manifold\_t_sne.py", line 1108, in fit_transform
+    embedding = self._fit(X)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\manifold\_t_sne.py", line 863, in _fit
+    "'n_components' should be inferior to 4 for the "
+ValueError: 'n_components' should be inferior to 4 for the barnes_hut algorithm as it relies on quad-tree or oct-tree.
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\test.py", line 11, in <module>
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 40, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 18, in __init__
+    x, cy, py, sy = loaddata_from_numpy(self.dataset, self.task, root_dir)
+  File "E:\robustlearn\diversify\datautil\actdata\util.py", line 45, in loaddata_from_numpy
+    tsne_results = TSNE(n_components=16, learning_rate='auto',init = 'random', perplexity = 3).fit_transform(x_train)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\manifold\_t_sne.py", line 1108, in fit_transform
+    embedding = self._fit(X)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\manifold\_t_sne.py", line 863, in _fit
+    "'n_components' should be inferior to 4 for the "
+ValueError: 'n_components' should be inferior to 4 for the barnes_hut algorithm as it relies on quad-tree or oct-tree.
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 11, in <module>
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 40, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 18, in __init__
+    x, cy, py, sy = loaddata_from_numpy(self.dataset, self.task, root_dir)
+  File "E:\robustlearn\diversify\datautil\actdata\util.py", line 46, in loaddata_from_numpy
+    tsne_results = pd.DataFrame(tsne_results, columns=['tsne1', 'tsne2'])
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\frame.py", line 678, in __init__
+    typ=manager,
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\internals\construction.py", line 324, in ndarray_to_mgr
+    _check_values_indices_shape_match(values, index, columns)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\internals\construction.py", line 393, in _check_values_indices_shape_match
+    raise ValueError(f"Shape of passed values is {passed}, indices imply {implied}")
+ValueError: Shape of passed values is (36840, 3), indices imply (36840, 2)
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\test.py", line 11, in <module>
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 40, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 22, in __init__
+    self.x = self.x[:, :, np.newaxis, :]
+IndexError: too many indices for array: array is 2-dimensional, but 3 were indexed
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\test.py", line 11, in <module>
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 40, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 18, in __init__
+    x, cy, py, sy = loaddata_from_numpy(self.dataset, self.task, root_dir)
+  File "E:\robustlearn\diversify\datautil\actdata\util.py", line 72, in loaddata_from_numpy
+    tsne_results = TSNE(n_components=2, learning_rate='auto',init = 'random', perplexity = 16).fit_transform(data_x)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\manifold\_t_sne.py", line 1108, in fit_transform
+    embedding = self._fit(X)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\manifold\_t_sne.py", line 834, in _fit
+    dtype=[np.float32, np.float64],
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\base.py", line 566, in _validate_data
+    X = check_array(X, **check_params)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\utils\validation.py", line 796, in check_array
+    % (array.ndim, estimator_name)
+ValueError: Found array with dim 3. Estimator expected <= 2.
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 11, in <module>
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 40, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 18, in __init__
+    x, cy, py, sy = loaddata_from_numpy(self.dataset, self.task, root_dir)
+  File "E:\robustlearn\diversify\datautil\actdata\util.py", line 85, in loaddata_from_numpy
+    return x_train, cy, py, sy
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 12, in <module>
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 40, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 18, in __init__
+    x, cy, py, sy = loaddata_from_numpy(self.dataset, self.task, root_dir)
+  File "E:\robustlearn\diversify\datautil\actdata\util.py", line 107, in loaddata_from_numpy
+    return x_train, cy, py, sy
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 11, in <module>
+    train_loader, train_loader_noshuffle, valid_loader, target_loader, _, _, _ = get_act_dataloader(
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 27, in accuracy
+    p = network.predict(x)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 148, in predict
+    return self.classifier(self.bottleneck(self.featurizer(x)))
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\robustlearn\diversify\network\act_network.py", line 38, in forward
+    x = self.conv2(self.conv1(x))
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\container.py", line 139, in forward
+    input = module(input)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\conv.py", line 457, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\conv.py", line 454, in _conv_forward
+    self.padding, self.dilation, self.groups)
+RuntimeError: Given groups=1, weight of size [16, 5, 1, 9], expected input[32, 8000, 1, 5] to have 5 channels, but got 8000 channels instead
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 27, in accuracy
+    p = network.predict(x)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 148, in predict
+    return self.classifier(self.bottleneck(self.featurizer(x)))
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\robustlearn\diversify\network\act_network.py", line 39, in forward
+    x = x.view(-1, self.in_features)
+RuntimeError: shape '[-1, 1408]' is invalid for input of size 2041856
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 12, in <module>
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 40, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 18, in __init__
+    x, cy, py, sy = loaddata_from_numpy(self.dataset, self.task, root_dir)
+  File "E:\robustlearn\diversify\datautil\actdata\util.py", line 108, in loaddata_from_numpy
+    return x_train, cy, py, sy
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 12, in <module>
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 40, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 18, in __init__
+    x, cy, py, sy = loaddata_from_numpy(self.dataset, self.task, root_dir)
+  File "E:\robustlearn\diversify\datautil\actdata\util.py", line 72, in loaddata_from_numpy
+    x_train = np.reshape(x_train, (x_train.shape[0], x_train.shape[2], x_train.shape[1]))
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 15, in <module>
+    print(output)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 15, in <module>
+    print(output)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 15, in <module>
+    print(output)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 14, in <module>
+    output = modelopera.accuracy(model, valid_loader, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 30, in accuracy
+    if weights is None:
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 14, in <module>
+    output = modelopera.accuracy(model, valid_loader, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 27, in accuracy
+    p = network.predict(x)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 148, in predict
+    return self.classifier(self.bottleneck(self.featurizer(x)))
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 14, in <module>
+    output = modelopera.accuracy(model, valid_loader, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 27, in accuracy
+    p = network.predict(x)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 148, in predict
+    return self.classifier(self.bottleneck(self.featurizer(x)))
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 14, in <module>
+    output = modelopera.accuracy(model, valid_loader, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 27, in accuracy
+    p = network.predict(x)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 149, in predict
+    return self.classifier(self.bottleneck(self.featurizer(x)))
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 14, in <module>
+    output = modelopera.accuracy(model, valid_loader, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 27, in accuracy
+    p = network.predict(x)
+  File "E:\robustlearn\diversify\alg\algs\diversify.py", line 149, in predict
+    return self.classifier(self.bottleneck(self.featurizer(x)))
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 29, in accuracy
+    features = np.concatenate((features, feature))
+  File "<__array_function__ internals>", line 6, in concatenate
+ValueError: all the input arrays must have same number of dimensions, but the array at index 0 has 1 dimension(s) and the array at index 1 has 2 dimension(s)
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 29, in accuracy
+    features = np.concatenate((features, feature))
+  File "<__array_function__ internals>", line 6, in concatenate
+ValueError: all the input arrays must have same number of dimensions, but the array at index 0 has 1 dimension(s) and the array at index 1 has 2 dimension(s)
+E:\robustlearn\diversify\alg\modelopera.py:53: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  features = np.array(features)
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 14, in <module>
+    output = modelopera.accuracy(model, valid_loader, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 54, in accuracy
+    features = np.reshape(data_x, (data_x.shape[0], data_x.shape[2] * data_x.shape[1]))
+KeyboardInterrupt
+E:\robustlearn\diversify\alg\modelopera.py:53: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  features = np.array(features)
+Traceback (most recent call last):
+  File "C:/Program Files/JetBrains/PyCharm 2021.2.3/plugins/python/helpers/pydev/pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "E:\robustlearn\diversify\test.py", line 14, in <module>
+    output = modelopera.accuracy(model, valid_loader, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 54, in accuracy
+    features = np.reshape(features, (features.shape[0] * features.shape[1], features.shape[2]))
+IndexError: tuple index out of range
+E:\robustlearn\diversify\alg\modelopera.py:53: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  features = np.array(features)
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\numpy\core\fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+ValueError: cannot reshape array of size 4 into shape (128,1408)
+E:\robustlearn\diversify\alg\modelopera.py:53: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  features = np.array(features)
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\numpy\core\fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+ValueError: cannot reshape array of size 4 into shape (128,1408)
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 14, in <module>
+    output = modelopera.accuracy(model, valid_loader, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 54, in accuracy
+    features = np.array(features)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 14, in <module>
+    output = modelopera.accuracy(model, valid_loader, None, "p")
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 12, in <module>
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 61, in get_act_dataloader
+    train_loader, train_loader_noshuffle, valid_loader, target_loader = get_dataloader(
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 12, in <module>
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 61, in get_act_dataloader
+    train_loader, train_loader_noshuffle, valid_loader, target_loader = get_dataloader(
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 14, in <module>
+    output = modelopera.accuracy(model, train_loader, None, "p")
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 14, in <module>
+    output = modelopera.accuracy(model, train_loader_noshuffle, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 54, in accuracy
+    features = np.array(features)
+KeyboardInterrupt
+E:\robustlearn\diversify\alg\modelopera.py:54: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  features = np.array(features)
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\numpy\core\fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+ValueError: cannot reshape array of size 17 into shape (524,1408)
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 14, in <module>
+    output = modelopera.accuracy(model, train_loader_noshuffle, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 56, in accuracy
+    features = np.array(features)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 14, in <module>
+    output = modelopera.accuracy(model, train_loader_noshuffle, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 57, in accuracy
+    features = np.array(features)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 14, in <module>
+    output = modelopera.accuracy(model, train_loader_noshuffle, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 57, in accuracy
+    features = np.array(features)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 14, in <module>
+    output = modelopera.accuracy(model, train_loader_noshuffle, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 57, in accuracy
+    features = np.array(features)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 14, in <module>
+    output = modelopera.accuracy(model, train_loader_noshuffle, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 57, in accuracy
+    features = np.array(features)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 12, in <module>
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 40, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 18, in __init__
+    x, cy, py, sy = loaddata_from_numpy(self.dataset, self.task, root_dir)
+  File "E:\robustlearn\diversify\datautil\actdata\util.py", line 65, in loaddata_from_numpy
+    if data_y.count(y_train[id_]) > num_class[str(y_train[id_])]:
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 14, in <module>
+    output = modelopera.accuracy(model, train_loader_noshuffle, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 63, in accuracy
+    return correct / total
+KeyboardInterrupt
+No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 14, in <module>
+    output = modelopera.accuracy(model, train_loader_noshuffle, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 64, in accuracy
+    return correct / total
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\matplotlib\cbook\__init__.py", line 2016, in _setattr_cm
+    yield
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\matplotlib\artist.py", line 1067, in update
+    raise AttributeError(f"{type(self).__name__!r} object "
+AttributeError: 'PathCollection' object has no property 'palette'
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\matplotlib\cbook\__init__.py", line 2016, in _setattr_cm
+    yield
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\matplotlib\artist.py", line 1067, in update
+    raise AttributeError(f"{type(self).__name__!r} object "
+AttributeError: 'PathCollection' object has no property 'palette'
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 14, in <module>
+    output = modelopera.accuracy(model, train_loader_noshuffle, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 71, in accuracy
+    return correct / total
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 14, in <module>
+    output = modelopera.accuracy(model, train_loader_noshuffle, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 71, in accuracy
+    return correct / total
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 12, in <module>
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 40, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 18, in __init__
+    x, cy, py, sy = loaddata_from_numpy(self.dataset, self.task, root_dir)
+  File "E:\robustlearn\diversify\datautil\actdata\util.py", line 119, in loaddata_from_numpy
+    return x_train, cy, py, sy
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 12, in <module>
+    args)
+  File "E:\robustlearn\diversify\datautil\getdataloader_single.py", line 40, in get_act_dataloader
+    args, args.dataset, args.data_dir, item, i, transform=actutil.act_train())
+  File "E:\robustlearn\diversify\datautil\actdata\cross_people.py", line 18, in __init__
+    x, cy, py, sy = loaddata_from_numpy(self.dataset, self.task, root_dir)
+  File "E:\robustlearn\diversify\datautil\actdata\util.py", line 119, in loaddata_from_numpy
+    return x_train, cy, py, sy
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 14, in <module>
+    output = modelopera.accuracy(model, train_loader_noshuffle, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 71, in accuracy
+    return correct / total
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 14, in <module>
+    output = modelopera.accuracy(model, train_loader_noshuffle, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 71, in accuracy
+    return correct / total
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 14, in <module>
+    output = modelopera.accuracy(model, train_loader_noshuffle, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 71, in accuracy
+    return correct / total
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 14, in <module>
+    output = modelopera.accuracy(model, train_loader_noshuffle, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 71, in accuracy
+    return correct / total
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 14, in <module>
+    output = modelopera.accuracy(model, train_loader_noshuffle, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 71, in accuracy
+    return correct / total
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 14, in <module>
+    output = modelopera.accuracy(model, train_loader_noshuffle, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 75, in accuracy
+    return correct / total
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 14, in <module>
+    output = modelopera.accuracy(model, train_loader_noshuffle, None, "p")
+  File "E:\robustlearn\diversify\alg\modelopera.py", line 75, in accuracy
+    return correct / total
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\robustlearn\diversify\test.py", line 7, in <module>
+    model = torch.load("model.pth")
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\serialization.py", line 1019, in persistent_load
+    load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\serialization.py", line 1001, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\serialization.py", line 175, in default_restore_location
+    result = fn(storage, location)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\serialization.py", line 157, in _cuda_deserialize
+    return obj.cuda(device)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\_utils.py", line 78, in _cuda
+    return torch._UntypedStorage(self.size(), device=torch.device('cuda')).copy_(self, non_blocking)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\storage.py", line 23, in __init__
+    def __init__(self, *args, **kwargs): ...  # noqa: E704
+KeyboardInterrupt
